@@ -1,0 +1,403 @@
+object Form1: TForm1
+  Left = 236
+  Height = 369
+  Top = 189
+  Width = 300
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  Caption = 'Form1'
+  ClientHeight = 344
+  ClientWidth = 300
+  Color = clGradientInactiveCaption
+  DesignTimePPI = 120
+  Menu = MainMenu1
+  LCLVersion = '2.2.0.4'
+  object Button1: TButton
+    Left = 15
+    Height = 39
+    Top = 85
+    Width = 46
+    Caption = 'MC'
+    TabOrder = 0
+  end
+  object Button2: TButton
+    Left = 72
+    Height = 39
+    Top = 85
+    Width = 46
+    Caption = 'MR'
+    Color = clWindowText
+    TabOrder = 1
+  end
+  object Button3: TButton
+    Left = 129
+    Height = 39
+    Top = 85
+    Width = 46
+    Caption = 'MS'
+    Color = clWindowText
+    TabOrder = 2
+  end
+  object Button4: TButton
+    Left = 188
+    Height = 39
+    Top = 85
+    Width = 46
+    Caption = 'M+'
+    Color = clWindowText
+    TabOrder = 3
+  end
+  object Button5: TButton
+    Left = 245
+    Height = 39
+    Top = 85
+    Width = 46
+    Caption = 'M-'
+    Color = clWindowText
+    TabOrder = 4
+  end
+  object Button6: TButton
+    Left = 14
+    Height = 39
+    Top = 129
+    Width = 46
+    Caption = '←'
+    Color = clWindowText
+    OnClick = SymbClear
+    TabOrder = 5
+  end
+  object Button7: TButton
+    Left = 72
+    Height = 39
+    Top = 129
+    Width = 46
+    Caption = 'CE'
+    Color = clWindowText
+    OnClick = Clear
+    TabOrder = 6
+  end
+  object Button8: TButton
+    Left = 129
+    Height = 39
+    Top = 126
+    Width = 46
+    Caption = 'C'
+    Color = clWindowText
+    OnClick = ClearAll
+    TabOrder = 7
+  end
+  object Button9: TButton
+    Left = 188
+    Height = 39
+    Top = 129
+    Width = 46
+    Caption = '±'
+    Color = clWindowText
+    OnClick = Uniqznaki
+    TabOrder = 8
+  end
+  object Button10: TButton
+    Left = 129
+    Height = 39
+    Top = 171
+    Width = 46
+    Caption = '9'
+    Color = clWindowText
+    OnClick = numclick
+    TabOrder = 9
+  end
+  object Button11: TButton
+    Left = 245
+    Height = 39
+    Top = 129
+    Width = 46
+    Caption = '√'
+    Color = clWindowText
+    OnClick = Uniqznaki
+    TabOrder = 10
+  end
+  object Button12: TButton
+    Left = 14
+    Height = 39
+    Top = 171
+    Width = 46
+    Caption = '7'
+    Color = clWindowText
+    OnClick = numclick
+    TabOrder = 11
+  end
+  object Button13: TButton
+    Left = 72
+    Height = 39
+    Top = 171
+    Width = 46
+    Caption = '8'
+    Color = clWindowText
+    OnClick = numclick
+    TabOrder = 12
+  end
+  object Button14: TButton
+    Left = 188
+    Height = 39
+    Top = 171
+    Width = 46
+    Caption = '/'
+    Color = clWindowText
+    OnClick = ZnakiClick
+    TabOrder = 13
+  end
+  object Button15: TButton
+    Left = 245
+    Height = 39
+    Top = 171
+    Width = 46
+    Caption = '%'
+    Color = clWindowText
+    OnClick = Uniqznaki
+    TabOrder = 14
+  end
+  object Button16: TButton
+    Left = 15
+    Height = 39
+    Top = 216
+    Width = 46
+    Caption = '4'
+    Color = clWindowText
+    OnClick = numclick
+    TabOrder = 15
+  end
+  object Button17: TButton
+    Left = 72
+    Height = 39
+    Top = 215
+    Width = 46
+    Caption = '5'
+    Color = clWindowText
+    OnClick = numclick
+    TabOrder = 16
+  end
+  object Button18: TButton
+    Left = 129
+    Height = 39
+    Top = 215
+    Width = 46
+    Caption = '6'
+    Color = clWindowText
+    OnClick = numclick
+    TabOrder = 17
+  end
+  object Button19: TButton
+    Left = 188
+    Height = 39
+    Top = 215
+    Width = 46
+    Caption = '*'
+    Color = clWindowText
+    OnClick = ZnakiClick
+    TabOrder = 18
+  end
+  object Button20: TButton
+    Left = 190
+    Height = 39
+    Top = 258
+    Width = 46
+    Caption = '-'
+    Color = clWindowText
+    OnClick = ZnakiClick
+    TabOrder = 19
+  end
+  object Button21: TButton
+    Left = 129
+    Height = 39
+    Top = 258
+    Width = 46
+    Caption = '3'
+    Color = clWindowText
+    OnClick = numclick
+    TabOrder = 20
+  end
+  object Button22: TButton
+    Left = 14
+    Height = 39
+    Top = 301
+    Width = 104
+    Caption = '0'
+    Color = clWindowText
+    OnClick = numclick
+    TabOrder = 21
+  end
+  object Button23: TButton
+    Left = 245
+    Height = 82
+    Top = 258
+    Width = 46
+    Caption = '='
+    Color = clWindowText
+    OnClick = Ravno
+    TabOrder = 22
+  end
+  object Panel1: TPanel
+    Left = 14
+    Height = 68
+    Top = 10
+    Width = 278
+    Alignment = taRightJustify
+    ClientHeight = 68
+    ClientWidth = 278
+    Color = clBtnFace
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 23
+    object Label1: TLabel
+      Left = 1
+      Height = 30
+      Top = 1
+      Width = 276
+      Align = alTop
+      Alignment = taRightJustify
+      AutoSize = False
+    end
+    object Label2: TLabel
+      Left = 1
+      Height = 36
+      Top = 31
+      Width = 276
+      Align = alClient
+      Alignment = taRightJustify
+      AutoSize = False
+      Caption = '0'
+    end
+  end
+  object Button24: TButton
+    Left = 72
+    Height = 39
+    Top = 258
+    Width = 46
+    Caption = '2'
+    Color = clWindowText
+    OnClick = numclick
+    TabOrder = 24
+  end
+  object Button25: TButton
+    Left = 15
+    Height = 39
+    Top = 258
+    Width = 46
+    Caption = '1'
+    Color = clWindowText
+    OnClick = numclick
+    TabOrder = 25
+  end
+  object Button26: TButton
+    Left = 245
+    Height = 39
+    Top = 215
+    Width = 46
+    Caption = '1/x'
+    Color = clWindowText
+    OnClick = Uniqznaki
+    TabOrder = 26
+  end
+  object Button27: TButton
+    Left = 129
+    Height = 39
+    Top = 301
+    Width = 46
+    Caption = ','
+    Color = clBtnHighlight
+    OnClick = numclick
+    TabOrder = 27
+  end
+  object Button28: TButton
+    Left = 188
+    Height = 39
+    Top = 301
+    Width = 46
+    Caption = '+'
+    Color = clWindowText
+    OnClick = ZnakiClick
+    TabOrder = 28
+  end
+  object MainMenu1: TMainMenu
+    Left = 14
+    Top = 25585
+    object MenuItem1: TMenuItem
+      Caption = 'Вид'
+      object MenuItem4: TMenuItem
+        Caption = 'Обычный'
+      end
+      object MenuItem13: TMenuItem
+        Caption = 'Инженер'
+      end
+      object MenuItem12: TMenuItem
+        Caption = 'Программист'
+      end
+      object MenuItem11: TMenuItem
+        Caption = 'Статистика'
+      end
+      object MenuItem10: TMenuItem
+        Caption = 'Журнал'
+      end
+      object MenuItem9: TMenuItem
+        Caption = 'Группировка цифр по разрядам'
+      end
+      object MenuItem2: TMenuItem
+        Caption = 'Обычный'
+      end
+      object MenuItem7: TMenuItem
+        Caption = 'Преобразование единиц'
+      end
+      object MenuItem6: TMenuItem
+        Caption = 'Вычисление даты'
+      end
+      object MenuItem5: TMenuItem
+        Caption = 'Листы'
+        object MenuItem23: TMenuItem
+          Caption = 'Ипотека'
+        end
+        object MenuItem26: TMenuItem
+          Caption = 'Автолизинг'
+        end
+        object MenuItem25: TMenuItem
+          Caption = 'Экономия топлива (миль на галлон)'
+        end
+        object MenuItem24: TMenuItem
+          Caption = 'Экономия топлива (л/100км)'
+        end
+      end
+    end
+    object MenuItem8: TMenuItem
+      Caption = 'Правка'
+      object MenuItem14: TMenuItem
+        Caption = 'Копировать Ctrl+C'
+      end
+      object MenuItem16: TMenuItem
+        Caption = 'Вставить       Ctrl+V'
+      end
+      object MenuItem15: TMenuItem
+        Caption = 'Журнал'
+        object MenuItem17: TMenuItem
+          Caption = 'Копировать журнал'
+        end
+        object MenuItem20: TMenuItem
+          Caption = 'Изменить                    F2'
+        end
+        object MenuItem19: TMenuItem
+          Caption = 'Отменить правку    ESC'
+        end
+        object MenuItem18: TMenuItem
+          Caption = 'Очистить   Ctrl+Shift+D'
+        end
+      end
+    end
+    object MenuItem3: TMenuItem
+      Caption = 'Справка'
+      object MenuItem21: TMenuItem
+        Caption = 'Посмотреть справку   F1'
+      end
+      object MenuItem22: TMenuItem
+        Caption = 'О программе'
+      end
+    end
+  end
+end
